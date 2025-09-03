@@ -36,19 +36,19 @@ All colors MUST be HSL.
     --input: 0 0% 90%;
     --ring: 20 100% 50%;
 
-    --bem-orange: 20 100% 50%;
-    --bem-orange-light: 20 100% 60%;
-    --bem-orange-dark: 20 100% 40%;
+    --bem-gold: 45 100% 50%;
+    --bem-gold-light: 48 100% 65%;
+    --bem-gold-dark: 42 100% 40%;
     --bem-black: 0 0% 8%;
     --bem-black-light: 0 0% 15%;
     --bem-gray: 0 0% 45%;
     --bem-gray-light: 0 0% 96%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(var(--bem-orange)), hsl(var(--bem-orange-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bem-gold)), hsl(var(--bem-gold-dark)));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--bem-gray-light)));
     
     --shadow-elegant: 0 10px 30px -10px hsl(var(--bem-black) / 0.1);
-    --shadow-orange: 0 10px 30px -10px hsl(var(--bem-orange) / 0.3);
+    --shadow-gold: 0 10px 30px -10px hsl(var(--bem-gold) / 0.3);
 
     --radius: 0.75rem;
 

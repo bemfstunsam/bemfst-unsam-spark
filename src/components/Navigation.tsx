@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-bem-orange to-bem-orange-dark flex items-center justify-center">
+            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-bem-gold to-bem-gold-dark flex items-center justify-center">
               <span className="text-white font-bold text-sm">BEM</span>
             </div>
             <div className="hidden md:block">
@@ -40,7 +40,7 @@ const Navigation = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   isActive(item.path)
-                    ? "text-bem-orange border-b-2 border-bem-orange pb-1"
+                    ? "text-bem-gold border-b-2 border-bem-gold pb-1"
                     : "text-bem-gray hover:text-bem-black"
                 }`}
               >
@@ -65,7 +65,7 @@ const Navigation = () => {
                     onClick={() => setIsOpen(false)}
                     className={`text-lg font-medium transition-colors px-4 py-2 rounded-lg ${
                       isActive(item.path)
-                        ? "bg-bem-orange text-white"
+                        ? "bg-bem-gold text-white"
                         : "text-bem-gray hover:text-bem-black hover:bg-bem-gray-light"
                     }`}
                   >
