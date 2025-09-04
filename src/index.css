@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 5%;
 
-    --primary: 20 100% 50%;
+    --primary: 20 60% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 8%;
@@ -26,29 +26,31 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 20 100% 50%;
+    --accent: 20 60% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 20 100% 50%;
+    --ring: 20 60% 55%;
 
-    --bem-gold: 45 100% 50%;
-    --bem-gold-light: 48 100% 65%;
-    --bem-gold-dark: 42 100% 40%;
+    --bem-orange: 20 60% 55%;
+    --bem-orange-light: 25 70% 65%;
+    --bem-orange-dark: 15 50% 45%;
     --bem-black: 0 0% 8%;
     --bem-black-light: 0 0% 15%;
     --bem-gray: 0 0% 45%;
     --bem-gray-light: 0 0% 96%;
+    --bem-red: 0 70% 55%;
+    --bem-red-light: 0 80% 65%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(var(--bem-gold)), hsl(var(--bem-gold-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bem-orange)), hsl(var(--bem-orange-dark)));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--bem-gray-light)));
     
     --shadow-elegant: 0 10px 30px -10px hsl(var(--bem-black) / 0.1);
-    --shadow-gold: 0 10px 30px -10px hsl(var(--bem-gold) / 0.3);
+    --shadow-orange: 0 10px 30px -10px hsl(var(--bem-orange) / 0.3);
 
     --radius: 0.75rem;
 

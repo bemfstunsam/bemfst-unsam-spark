@@ -52,10 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'bem-gold': {
-					DEFAULT: 'hsl(var(--bem-gold))',
-					light: 'hsl(var(--bem-gold-light))',
-					dark: 'hsl(var(--bem-gold-dark))'
+				'bem-orange': {
+					DEFAULT: 'hsl(var(--bem-orange))',
+					light: 'hsl(var(--bem-orange-light))',
+					dark: 'hsl(var(--bem-orange-dark))'
+				},
+				'bem-red': {
+					DEFAULT: 'hsl(var(--bem-red))',
+					light: 'hsl(var(--bem-red-light))'
 				},
 				'bem-black': {
 					DEFAULT: 'hsl(var(--bem-black))',
