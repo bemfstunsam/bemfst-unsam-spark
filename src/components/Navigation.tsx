@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
-import bemLogo from "../assets/bem-logo-new.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +23,7 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={bemLogo} alt="BEM FST UNSAM" className="h-10 w-10" />
+            <img src="/lovable-uploads/bem-logo-new.png" alt="BEM FST UNSAM" className="h-10 w-10" />
             <div className="hidden md:block">
               <span className="font-bold text-bem-black">BEM FST</span>
               <p className="text-xs text-bem-gray">UNSAM</p>

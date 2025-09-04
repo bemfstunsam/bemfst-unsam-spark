@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Heart, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroEventBg from "../assets/hero-event-bg.png";
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
       <section 
         className="relative py-20 px-4 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${heroEventBg})`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/lovable-uploads/hero-event-bg.png)`
         }}
       >
         <div className="container mx-auto text-center">
