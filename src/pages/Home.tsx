@@ -10,14 +10,11 @@ const Home = () => {
       <section 
         className="relative py-20 px-4 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/lovable-uploads/hero-event-bg.png)`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/lovable-uploads/b06771e5-43d9-486a-928e-53885c4aaccc.png)`
         }}
       >
         <div className="container mx-auto text-center">
           <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-bem-orange to-bem-orange-dark mb-6">
-              <span className="text-white font-bold text-2xl">BEM</span>
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               BEM FST <span className="text-bem-orange">UNSAM</span>
             </h1>
