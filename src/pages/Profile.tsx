@@ -16,36 +16,42 @@ const Profile = () => {
     {
       name: "Humas",
       head: "Ari Setia Lubis",
+      image: "/lovable-uploads/a3c5d57e-7fcf-4ff7-9ee5-ccbe69a7d7f5.png",
       members: ["Yusra Alfian", "Tara Hawary"],
       description: "Divisi Humas bertanggung jawab dalam menjalin hubungan masyarakat, komunikasi eksternal, dan membangun citra positif BEM FST."
     },
     {
       name: "Riset dan Teknologi",
       head: "Muhammad Syahrul",
+      image: "/lovable-uploads/c0ed5ea8-0a91-49a1-8838-d862c3248e13.png",
       members: ["Dia Suci Cahyani", "Muhammad Ridwan"],
       description: "Divisi Ristek fokus pada pengembangan teknologi, penelitian, dan inovasi untuk kemajuan organisasi dan mahasiswa FST."
     },
     {
       name: "Minat dan Bakat",
       head: "Mandrius Manalu",
+      image: "/lovable-uploads/854d6555-5708-409c-8e71-f017fce18c60.png",
       members: ["Ramada Alya Fitri", "Fachri Aulia Rachman"],
       description: "Divisi Minba bertugas mengembangkan minat dan bakat mahasiswa melalui berbagai kegiatan kreatif dan kompetitif."
     },
     {
       name: "Agama",
       head: "Syafaruddin",
+      image: "/lovable-uploads/2b548543-c5f8-4e26-815c-251a533cc06f.png",
       members: ["Ridha Nurjannah"],
       description: "Divisi Agama bertugas sebagai wadah pembinaan rohani, pengembangan nilai-nilai keislaman, serta peningkatan keimanan dan ketakwaan anggota."
     },
     {
       name: "Kominfo",
       head: "M. Habibi",
+      image: "/lovable-uploads/404684ea-051b-44c6-9b84-fb8b0e46d772.png",
       members: ["Quwin Noor", "Fransiska Yongtina Marbun"],
       description: "Divisi Kominfo mengelola komunikasi dan informasi, media sosial, serta dokumentasi kegiatan BEM FST."
     },
     {
       name: "Kesekretariatan",
       head: "David Julkarnain",
+      image: "/lovable-uploads/9efd8f45-3752-43a3-a6c0-e70ebe661e41.png",
       members: [],
       description: "Divisi Kesekretariatan bertanggung jawab dalam administrasi, dokumentasi, dan kearsipan organisasi."
     }
@@ -179,11 +185,26 @@ const Profile = () => {
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold text-bem-orange mb-2">{division.name}</h3>
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-bem-orange/20 to-bem-orange/40 flex items-center justify-center">
-                        <div className="w-12 h-12 rounded-full bg-bem-gray-light flex items-center justify-center">
-                          <span className="text-bem-orange font-bold text-sm">
-                            {division.head.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                          </span>
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-bem-orange/20 to-bem-orange/40 p-1">
+                        <div className="w-full h-full rounded-full bg-bem-gray-light flex items-center justify-center overflow-hidden">
+                          {division.image ? (
+                            <img 
+                              src={division.image} 
+                              alt={division.head}
+                              className="w-full h-full object-cover"
+                              onError={(e) => {
+                                const target = e.currentTarget as HTMLImageElement;
+                                const fallback = target.nextElementSibling as HTMLElement;
+                                target.style.display = 'none';
+                                if (fallback) fallback.style.display = 'flex';
+                              }}
+                            />
+                          ) : null}
+                          <div className="w-full h-full bg-bem-gray-light flex items-center justify-center" style={{display: division.image ? 'none' : 'flex'}}>
+                            <span className="text-bem-orange font-bold text-sm">
+                              {division.head.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div>
